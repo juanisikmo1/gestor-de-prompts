@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+header {
+    background: #645bdb1c;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 35px auto;
+}
+
+.formulario {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 35px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 8px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #000000;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+button {
+    background: #5bdb6c;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 11px 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #62b541;
+}
+
+.biblioteca {
+    margin-top: 30px;
+}
+
+.biblioteca > p {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.biblioteca > h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.tarjeta {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+}
+
+.tarjeta h3 {
+    margin: 12px 0;
+}
+
+.tarjeta p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.etiqueta {
+    color: #24c97c;
+    background: #eeedff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.acciones {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.btn-eliminar {
+    background: #e74c3c;
+}
+
+.vacio {
+    color: #dbd8d8;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #000000;
+}
+
+@media (max-width: 750px) {
+    .tarjetas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+}
+.acciones button:first-child {
+    background-color: #114701;
+}
+
+.acciones .btn-eliminar {
+    background-color: #e74c3c;
+}

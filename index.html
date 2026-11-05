@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de prompts</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Gestor de prompts</h1>
+        <p>Tus prompts guardados</p>
+    </header>
+
+    <main class="contenedor">
+
+        <section class="formulario">
+            <h2>Guardar nuevo prompt</h2>
+
+            <form id="formulario">
+
+                <label>Título del prompt</label>
+                <input type="text" id="titulo" placeholder="Ejemplo: Profesor de programación" required>
+
+                <label>Categoría</label>
+                <select id="categoria" required>
+                    <option value="">Seleccionar categoría</option>
+                    <option>Programación</option>
+                    <option>Estudio</option>
+                    <option>Diseño</option>
+                    <option>Inteligencia Artificial</option>
+                    <option>Otros</option>
+                </select>
+
+                <label>Contenido del prompt</label>
+                <textarea id="contenido" placeholder="Escribe tu prompt aquí..." required></textarea>
+
+                <button type="submit">Guardar prompt</button>
+
+            </form>
+        </section>
+
+        <section class="biblioteca">
+            <h2>Mis prompts</h2>
+            <p>Prompts guardados: <span id="contador">0</span></p>
+
+            <div id="lista-prompts" class="tarjetas">
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Gestor de prompts 2026</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
